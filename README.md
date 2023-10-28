@@ -1,2 +1,2 @@
 # ML4CE-AD
-Repository for the Machine Learning for Chemical Engineering coursework
+Repository for the Machine Learning for Chemical Engineering coursework in Anomaly Detection

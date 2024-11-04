@@ -1,19 +1,19 @@
 """
 This is an example of how to submit the coursework. This file MUST contain:
 
-  - A function called `fit_preprocess(data_path)` that returns a single object
-    representing the parameters used to preprocess the data. It must have one
-    parameter only, the path to the csv file containing the data used.
-  - A function called `load_and_preprocess(data_path, preprocess_params)` that
-    returns the preprocessed data and labels. It must have two parameters, the
-    path to the csv file containing the data used and the object returned by
-    `fit_preprocess()`.
-  - A function called `fit_model(X)` that returns a trained model that will be
-    used by `predict()`. It must have no parameters and return a single object
-    that represents the model.
-  - A function called `predict(X, model)` that returns the anomaly detection
-    prediction for the data in X. It must have two parameters only, the data X
-    and the model object, and return.
+  - fit_preprocess(data_path): A function that takes a single parameter, the 
+  path to the CSV file containing the data. It returns an object (e.g., a 
+  dictionary) with parameters used to preprocess the data.
+  - load_and_preprocess(data_path, preprocess_params): A function with two 
+  parameters: the path to the CSV file containing the data and the 
+  preprocessing parameters object returned by fit_preprocess. It returns two 
+  objects: the preprocessed data and the labels, which can be in the form of 
+  numpy arrays, pandas DataFrames, or Python lists.
+  - fit_model(X): A function that takes the preprocessed data as a single 
+  parameter and returns a trained model, which will be used by predict. 
+  This model is any object that predict requires to perform the detection task.
+  - predict(X, model): A function that returns the anomaly detection prediction 
+  for the input data, X,  based on the provided model.
 
 Do not change the name of "fit_preprocess", "load_and_preprocess", "fit_model"
 and "predict" functions.
@@ -24,8 +24,7 @@ the already trained model.
 
 You can include any other code that is useful for the coursework. For instance,
 here `main()` is included for us to check that predict and model run properly,
-and to show some results of the performance of the model. In fact, modularizing
-your code in several blocks of code (functions) is encouraged.
+and to show some results of the performance of the model.
 """
 
 import numpy as np
